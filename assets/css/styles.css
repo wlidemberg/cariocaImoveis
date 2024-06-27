@@ -1,0 +1,1132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-width: 320px;;
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.10rem;
+}
+
+h1{
+    font-size: 2.25rem;  
+}
+
+h2{  
+    font-size: 2rem;
+    letter-spacing: 0.10rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #F0F2F0;  
+}
+
+h3{
+    font-size: 1.875rem;
+}
+
+a{
+    text-decoration: none;
+    color: #f0f2f0;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.itemNav:hover{
+    opacity: 0.7;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    background-color: #bd4421;
+    color: #F0F2F0;
+}
+
+.container{
+    width: 100%;
+    background-color: #F0F2F0;
+    padding: 40px 0;
+
+}
+
+
+.content{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h2{
+        color: #000;
+    }
+       
+}
+
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #f0f2f0;
+    border: 2px solid #f0f2f0;
+    width: 280px;
+
+    /* Display */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.btn-orange{
+    background-color: #bd4421;
+}
+
+.btn-yellow{
+    background-color: #EDA624;
+}
+
+.btn-blue{
+    background-color: #085A8c;
+}
+
+
+
+.btn-container{
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/******************* Header/Navigation *******************/
+
+.container-header{
+
+    /* display e dimensões */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.brand{
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+}
+
+.mobileMenu{
+    font-size: 1.5rem;
+    display: none;
+}
+
+.brand, .navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #bd4421;
+    /* height: 80px; */
+    padding: 30px 0;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.brand i {
+    font-size: 1.5rem;
+}
+
+.navigation li a {  
+    padding: 5px 10px;
+    font-weight: 500;
+    color: #f0f2f0;
+}
+
+/******************* HERO *******************/
+
+
+
+.container-hero{
+    width: 100%;
+    min-width: 320px;
+    padding: 100px 0;
+    background-image: url('../imgs/capa1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    /* z-index: -2; */
+}
+
+.container-hero::before{
+    content: "";
+    width: 100%;
+    height: auto;
+    background-color: #bd4421;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.content-hero{
+    width: 100%;
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 auto;
+
+    /* Display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.content-hero .hero-headline{
+
+    width: 50%;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-hero h1{
+    font-size: 3rem;
+    color: #f0f2f0;
+    line-height: 3rem;
+}
+
+.content-hero h1 span{
+    display: block;
+    color: #f0f2f0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+    padding-left: 30px;
+}
+
+.content-hero p{
+    font-size: 1.25rem;
+    color: #F0F2F0;
+}
+
+.content-hero .hero-form{
+    background-color: #fff;
+    padding: 20px 40px;
+    /* z-index: 1; */
+}
+
+.content-hero .hero-form h2{
+    color: #000;
+}
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group label{
+    font-size: 0.875rem;
+    padding-left: 10px;
+    font-weight: 500;
+    color: #bd4421;
+}
+
+.form-group input, .form-group select, .form-group textarea{
+    width: 100%;
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(237, 166, 36, 0.2);
+}
+
+.form-group .range-form{
+    font-size: 0.8rem;
+    padding-left: 10px;
+
+    /* Display */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.range-form div{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/******************* OPÇÕES *******************/
+.container-opcoes{
+    width: 100%;
+    min-width: 320px;
+    padding: 100px 0;
+    background-color: #085A8c;
+}
+
+.content-opcoes{
+    width: 100%;
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 auto;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-opcoes h2{
+   
+    font-size: 2rem;
+    letter-spacing: 0.10rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #F0F2F0;
+    
+}
+
+.locacao{
+    /* Display */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.locacao .locacao-imagens{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    min-width: 320px;
+    height: 400px;
+}
+
+.locacao .locacao-imagens figure{
+    position: absolute;
+}
+
+.img-apto{
+    top: 0;
+    left: 0;
+    
+}
+
+.img-casa{
+    top: 100px;
+    right: 0;
+}
+
+.img-kitnet{
+    bottom: 0;
+    left: 0;
+}
+
+figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F0F2F0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: 1px solid #EDA624;
+    background-color: #EDA624;
+    padding: 2.5px 5px;
+    border-radius: 10px 0 10px 0;
+}
+
+.locacao .locacao-imagens figure img{
+    width: 100%;
+    max-width: 250px;
+    /* border: 1px solid #bd4421; */
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.locacao .locacao-descricao{
+    
+    padding: 0 100px;
+    width: 100%;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #EDA624;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.locacao-descricao > p{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.locacao .locacao-descricao hr{
+    border-color: #085A8c;
+}
+
+/* VENDA */
+.venda{
+    padding: 100px 0;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.venda div:last-child{
+    margin: 20px auto 0 auto;
+}
+
+.venda-descricao{
+    color: #F0F2F0;
+    text-align: center;
+    padding: 0 20px;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.venda-opcoes{
+
+    /* Display */
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 40px;
+    
+}
+
+.venda-opcoes-item{
+    width: 200px;
+    height: 200px;
+    background-color: #EDA624;
+    border: 10px solid #F0F2F0;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.venda-opcoes-item i{
+    font-size: 3rem;
+}
+
+.venda-opcoes-item span{
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.10rem;
+}
+
+/* .venda-opcoes  div:first-child{
+    background-color: #000;
+} */
+
+
+/* Consultoria */
+
+.consultoria{
+    background-image: url('../imgs/reuniao.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 50px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultoria-content{
+
+    width: 100%;
+    max-width: 620px;
+    color: #f0f2f0;
+    text-align: center;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.consultoria-content > p{
+    font-weight: 300;
+    letter-spacing: 0.10rem;
+    line-height: 1.125rem;
+    background-color: #bd4421;
+    padding: 10px 20px;
+}
+
+.destaque{
+    
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.destaque p{
+    text-align: center;
+    padding: 0 40px;
+    margin-bottom: 20px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.destaque p i{
+    font-size: 2rem;
+    color: #bd4421;
+    margin-bottom: 10px;
+}
+
+/****************** Pagina Sobre ******************/
+
+.container-about{
+    padding: 40px 0 0 0;
+}
+
+.layout-about{
+    display: flex;
+    text-align: left;
+    
+}
+
+.layout-about img{
+    width: 100%;
+;
+
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.about div:last-child{
+    align-items: center;
+}
+
+.layout-about figure{
+    /* background-color: #085A8c; */
+
+    /* Display */
+    display: flex;
+}
+
+.about-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;    
+}
+
+.about-item h2{
+    display: flex;
+    align-items: center;
+    line-height: 1.875rem;
+}
+
+.about-item h2::before{
+    content: " ";
+   
+    background-color: #085A8c;
+    width: 15px;
+    height: 100%;
+    left: 0;
+    margin-right: 5px;
+    border-radius: 5px;
+
+}
+
+/******************* IMOVEIS *******************/
+.container-cards{
+
+    /* Display */
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.content-dsponiveis{
+    
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-dsponiveis h2{
+    color: #000;
+}
+
+.content-card{
+    width: 100%;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+
+}
+
+.card{
+    width: 100%;
+    max-width: 302px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.card-img{
+    position: relative;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img figcaption{
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    border-radius: 20px 0 20px 0;
+}
+
+.card-img img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.content-card h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    background-color: #EDA624;
+    width: 100%;
+    padding: 5px;
+}
+
+.imv-venda figcaption{
+    background-color: #0aca61;
+    border: 1px solid #0aca61;
+}
+
+.imv-venda h3{
+    background-color: #0aca61;
+}
+
+.content-card p{
+    padding: 0 20px;
+}
+
+.card-icons{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card-icons span{
+    font-size: 0.875rem;
+    font-weight: 400;
+    
+}
+
+.card-icons i{
+    font-size: 1rem;
+    padding-right: 5px;
+    color: #424242;
+}
+
+.container-imovel-tipo, .container-comprar{
+    list-style: none;
+
+    /* Display */
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imovel-tipo{
+    width: 100%;
+    max-width:calc((100% - 40px) / 3);
+    border: 1px solid rgba(189,88,33,0.5);
+    padding: 20px 50px;
+    background: linear-gradient(180deg, rgba(189,88,33,1) 42%, rgba(237, 166, 36,1) 100%);
+    border-radius: 20px;
+    color: #F0F2F0;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.imovel-tipo i{
+    font-size: 4rem; 
+}
+
+
+/******************* CONTATO *******************/
+.content-contato{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.content-contato h2{
+    width: 100%;
+}
+
+.contato-item, .contato-item form, .contato-item iframe{
+    width: 100%;
+}
+
+
+.contato-item iframe{
+    min-height: 400px;
+}
+
+.contato-item form{
+    padding: 20px;
+}
+
+/******************* AREA CLIENTE *******************/
+.content-form-cliente{
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    margin: 0 auto 20px auto ;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-form-cliente form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 15px;
+}
+
+.content-form-cliente form i{
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.5);
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 50%;
+}
+
+
+
+/* .contato-item form div{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+
+/******************* FOOTER *******************/
+footer{
+    width: 100%;
+    min-width: 320px;
+    background-color: #EDA624;
+}
+
+.container-footer{
+    width: 100%;
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 50px 0 20px 0;
+
+}
+
+.content-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.content-footer .footer-brand{
+     /* Display */
+     display: flex;
+     flex-direction: column;
+     Align-items: center;
+     text-align: center;
+}
+
+
+
+
+
+.content-footer .footer-brand i{
+    font-size: 3rem;   
+}
+
+.content-footer .footer-navigation{
+    list-style: none;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-footer .footer-navigation .footer-nav-item{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.content-footer .footer-navigation .footer-nav-item:hover{
+    color: #f0f2f0;
+}
+
+.content-footer .footer-navigation .footer-nav-item i{
+    padding-right: 5px ;
+}
+
+.content-footer .social-navigation{
+    align-self: flex-end;
+    
+}
+
+.content-footer .social-navigation a{
+    color: #F0F2F0;
+}
+
+.content-footer .social-navigation a:hover{
+    color: #000;
+}
+
+
+.content-footer .social-navigation i{
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+
+
+/* ******************** Responsivo ******************** */
+
+@media screen and (min-width: 856px) and (max-width: 1024px) {
+    .container-hero, .container-opcoes, .container{
+        padding: 40px 10px 40px 10px;
+
+    }
+
+
+}
+
+
+
+@media screen and ( min-width: 320px ) and ( max-width: 856px ) {
+    
+    body{
+        overflow-x: hidden;
+        background-color: #000;
+    }
+
+    h1{
+        font-size: 5rem;  
+    }
+    
+    h2{  
+        font-size: 1.5rem;
+        letter-spacing: 0.10rem;
+        text-align: center;
+        text-transform: capitalize;
+        color: #F0F2F0;  
+    }
+    
+    h3{
+        font-size: 1.125rem;
+    }
+
+
+    .container-hero, .container-opcoes, .container{
+        padding: 40px 10px 40px 10px;
+
+    }
+
+    .mobileMenu{
+        display: block;
+        margin-right:20px ;
+    }
+
+    .navigation{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 999;
+        
+    }
+
+    .itemNav{
+        opacity: 0;
+    }
+
+
+    .navigation.active{
+        transform: translateX(0%);
+    }
+
+    @keyframes linkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+    .content-hero .hero-headline{
+
+        width: 100%;
+        padding: 10px;
+
+        /* Display */
+        justify-content: center;
+    }
+
+    .content-hero .hero-headline h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .content-hero .hero-headline h1 span{
+        font-size: 1.5rem;
+    }
+
+    .content-hero .hero-headline p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+
+    .content-hero .hero-form {
+        width: 100%;
+    }
+
+
+    .content-hero .hero-form{
+        background-color: #fff;
+        padding: 10px 40px;
+    }
+
+    .hero-form .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+
+    /* OPÇÔES */
+
+    .container-opcoes{
+        padding: 40px 0 0 0;
+    }
+
+    .content-opcoes h2{
+        font-size: 1.5rem;
+    }
+
+    .locacao{
+        /* Display */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 0;
+    }
+    
+
+    .locacao .locacao-imagens{
+        width: 320px;
+        height: 320px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .locacao .locacao-imagens figure img{
+        max-width: 200px;
+    }
+
+    .img-apto{
+        top: 0;
+        left: 10px;
+        
+    }
+    
+    .img-casa{
+        top: 70px;
+        right: 10px;
+    }
+    
+    .img-kitnet{
+        bottom: 0;
+        left: 10px;
+    }
+
+    .locacao .locacao-descricao{
+        padding: 10px;
+    }
+    
+    
+    .locacao-descricao > p{
+        font-size: 1rem;
+    }
+
+    /* VENDA */
+    .venda{
+        padding: 40px 0; /**/
+    }
+
+    .venda-descricao{
+        padding: 0 10px;/**/
+    }
+
+    .venda-opcoes{
+        gap: 20px; /**/
+    }
+
+    /* CONSULTORIA */
+
+    .consultoria{
+        padding: 0;/**/
+    }
+    
+    .consultoria-content{
+    
+        width: 100%;/**/
+        padding: 20px 0;/**/
+
+    }
+    
+    .consultoria-content > p{
+        line-height: 1.5rem;/**/
+    }
+
+    /* ABOUT */
+
+    .container-about{
+        padding: 40px 10px 20px 10px;
+    }
+
+    .layout-about figure{
+    
+        /* Display */
+        display: none;
+    }
+
+    /******************* CONTATO *******************/
+    .content-contato{
+        flex-wrap: wrap;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    /* CLIENTE */
+    .content-form-cliente{
+        max-width: 320px;
+        min-width: 280px;
+    }
+
+    /* IMOVEIS */
+    .container-cards{
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    .content-footer{
+        gap: 20px;
+    }    
+
+}
+
+
+

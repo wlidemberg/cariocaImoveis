@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- FontArwesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.css">
+
+
+    <!-- Fontes Externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Carioca Imóveis</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="brand">
+                <i class="fa-solid fa-house"></i>
+                <span>Carioca Imóveis</span>
+            </div>
+            
+            <nav>
+                <div class="mobileMenu">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+                <ul class="navigation">
+                    <li><a href="index.html" class="itemNav">Inicio</a></li>
+                    <li><a href="sobre.html" class="itemNav">Sobre a Carioca</a></li>
+                    <li><a href="imoveis.html" class="itemNav">Imóveis</a></li>
+                    <li><a href="contato.html" class="itemNav">Contato</a></li>
+                    <li><a href="area-cliente.html" class="itemNav">Area Cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <section class=" container container-contato">
+            <div class="content">
+                <h2><i class="fa-solid fa-rug"></i>Contato</h2>
+                <div class="content-contato">
+                    <div class="contato-item">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7358.517464406988!2d-43.45606075642678!3d-22.755777491407976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967a9b8f2aeb3%3A0xd7fda98f8317b234!2sR.%20Dom%20Walmor%2C%20426%20-%20sala%20101%20-%20Centro%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026215-219!5e0!3m2!1spt-BR!2sbr!4v1719242965125!5m2!1spt-BR!2sbr" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contato-item">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="nome">Nome: </label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite Seu nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" name="telefone" id="telefone" placeholder="(21)99999-9999">
+                            </div>
+
+                            <div>
+                                <div>
+                                    <input type="radio" name="tipo" id="alugar" value="alugar" checked>
+                                    <label for="alugar">Alugar</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="tipo" id="comprar" value="comprar">
+                                    <label for="comprar">Comprar</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mdg">Deixe sua Mensagem:</label>
+                                <textarea name="msg" id="msg"></textarea>
+                            </div>
+                            <div class="btn-container">
+                                <input class="btn btn-orange" type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+                <div class="footer-brand">
+                    <a href="./index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <h2>Carioca Imóveis</h2>
+                        <p>Deixa com a gente!</p>
+                    </a>
+                    
+                    
+                </div>
+
+                <ul class="footer-navigation">
+                    <!-- li*5>a:blank.footer-nav-item -->
+                    <li><a href="index.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Inicio</a></li>
+                    <li><a href="sobre.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Sobre a Carioca</a></li>
+                    <li><a href="imoveis.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Imóveis</a></li>
+                    <li><a href="contato.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Contato</a></li>
+                    <li><a href="area-cliente.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Area Cliente</a></li>  
+                </ul>
+
+                <div class="social-navigation">
+                    <a href="https://www.facebook.com/berg.sousa.391/?locale=pt_BR"><i class="fa-brands fa-facebook" title="icone de acesso ao facebook"></i></a>
+                    <a href="https://www.instagram.com/sousa.berg.80/"><i class="fa-brands fa-instagram" title="icone de acesso ao instagram"></i></a>
+                    <a href="https://github.com/wlidemberg"><i class="fa-brands fa-github" title="icone de acesso ao github"></i></a>
+                    <a href="https://www.linkedin.com/in/wlidemberg-sousa-465367101/"><i class="fa-brands fa-linkedin" title="icone de acesso ao linkedin"></i></a>
+                    <a href="https://www.behance.net/automatizei_berg"><i class="fa-brands fa-behance" title="icone de acesso ao behance"></i></a>
+                    <a href="mailto:automatizei@gmail.com"><i class="fa-solid fa-envelope" title="icone de envio de email"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</html>

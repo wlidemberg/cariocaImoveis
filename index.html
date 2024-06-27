@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- FontArwesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.css">
+
+
+    <!-- Fontes Externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Carióca Imóveis</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="brand">
+                <i class="fa-solid fa-house"></i>
+                <span>Carioca Imóveis</span>
+            </div>
+            
+            <nav>
+                <div class="mobileMenu">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+                <ul class="navigation">
+                    <li><a href="index.html" class="itemNav">Inicio</a></li>
+                    <li><a href="sobre.html" class="itemNav">Sobre a Carioca</a></li>
+                    <li><a href="imoveis.html" class="itemNav">Imóveis</a></li>
+                    <li><a href="contato.html" class="itemNav">Contato</a></li>
+                    <li><a href="area-cliente.html" class="itemNav">Area Cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <main>
+        <section class="container-hero">
+            <div class="content-hero">
+                <div class="hero-headline">
+                   
+                    <h1><span>Bem-vindo à </span>Carioca Imóveis!</h1>
+                    <div>
+                        <p>Acha que encontrar um imóvel no Rio é dificil? Deixa com a gente!</p>
+                        <p>Se você esta procurando um cantinho para chamar de seu, um  apartamento na praia, ou uma casa para curtir com a família, você está no lugar certo!</p>
+                        <p>Aqui na Carioca Imóveis, a gente entende que cada cliente é único e merece atendimento Vip, de primeira</p>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://api.whatsapp.com/send?phone=5521968045339&text=Obrigado%20por%20clicar%20no%20meu%20projeto" class="btn btn-yellow">Fale conosco <i class="fa-solid fa-comments"></i></a>
+                    </div>
+                </div>
+                <div class="hero-form">
+                    <h2>Encontre o seu imóvel</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="end">Endereço ou CEP:</label>
+                            <input type="text" name="end" id="end" placeholder="Endereço ou CEP">
+                        </div>
+                        <div class="form-group">
+                            <label for="type-imovel">Selecione o tipo do imóvel:</label>
+                            <select name="select-type-imovel">
+                                <option value="residencial">Residencial</option>
+                                <option value="comercial">Comercial</option>
+                                <option value="industrial">Industrial</option>
+                            </select>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="type-transacao">Tipo de transação:</label> 
+                            <select name="type-transacao" id="type-transacao">
+                                <option value="">Selecione uma opção</option>
+                                <option value="venda">Venda</option>
+                                <option value="locacao">Locação</option>
+                            </select>       
+                        </div>
+                        <div class="form-group">
+                            <label for="limite-valor">Selecione um valor limite:</label>
+                            <div class="range-form">
+                                <div>
+                                    <span>R$ 300,00</span><span>R$ 100.000,00</span>
+                                </div>
+                                <input type="range" min="300" max="100000">
+                                
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button type="submit" class="btn btn-blue">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container-opcoes">
+            <div class="content-opcoes">
+                <h2>O que você encontra aqui?</h2>
+                
+                <div class="locacao">
+                    <div class="locacao-imagens">
+                        <figure class="img-apto">
+                            <img src="assets/imgs/locacao/apartamento.jpg" alt="Imagem de Apartamentos">
+                            <figcaption>Apartamentos</figcaption>
+                        </figure>
+                        <figure class="img-casa">
+                            <img src="assets/imgs/locacao/casa.jpg" alt="Imagem de Casas">
+                            <figcaption>Casas</figcaption>
+                        </figure>
+                        <figure class="img-kitnet">
+                            <img src="assets/imgs/locacao/kitnet.jpg" alt="Imagem de Kitnets">
+                            <figcaption>Kitnets</figcaption>
+                        </figure>
+                    </div>
+                    <div class="locacao-descricao">
+                        <div>
+                            <h3>Locação de Imóveis</h3>
+                            <p><em>Apartamentos, casas, kitnets e muito mais, só coisa boa!</em></p>
+                        </div>
+                        <hr>
+                        <p>"Procurando um lugar pra chamar de seu? Aqui na Carioca Imóveis, temos uma vasta gama de opções de aluguel que vão desde apartamentos modernos na Zona Sul até charmosas casas na Barra. Quer uma kitnet prática e aconchegante ou uma casa espaçosa para toda a família? A gente tem!"</p>
+                        <div class="btn-container">
+                            <a href="https://api.whatsapp.com/send?phone=5521968045339&text=Obrigado%20por%20clicar%20no%20meu%20projeto" class="btn btn-blue">Veja Mais</a>
+                        </div>
+                    </div> 
+                    
+                </div>
+
+                <div class="venda">
+                    <div class="venda-descricao">
+                        <h3>Venda de Imóveis</h3>
+                        <p>"Pensando em comprar um imóvel no Rio? Seja para morar ou investir, na Carioca Imóveis você encontra uma seleção incrível que vai do Leblon à Barra. Nossos especialistas estão prontos para te ajudar a encontrar o imóvel dos seus sonhos e garantir que você faça um ótimo negócio."</p>
+                    </div>
+                    <div class="venda-opcoes">
+                        <a href="">
+                            <div class="venda-opcoes-item">
+                                <i class="fa-solid fa-building"></i>
+                                <span>Apartamentos de Luxo</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="venda-opcoes-item">
+                                <i class="fa-solid fa-house-circle-check"></i>
+                                <span>Casas Exclusivas</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="venda-opcoes-item">
+                                <i class="fa-solid fa-store"></i>
+                                <span>Imóveis Comerciais</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://api.whatsapp.com/send?phone=5521968045339&text=Obrigado%20por%20clicar%20no%20meu%20projeto" class="btn btn-orange">Fale Conosco <i class="fa-solid fa-comments"></i></a>
+                    </div>
+                </div>
+
+                <div class="consultoria">
+                    <div class="consultoria-content">
+                        <div>
+                            <h3>Consultoria Personalizada</h3>
+                            <p><em>Consultoria Personalizada: Aqui, Você Não Está Sozinho</em></p>
+                        </div>
+                        <p>Não sabe por onde começar? Relaxa, a gente te ajuda! Nossa equipe de especialistas está aqui para entender suas necessidades e oferecer as melhores opções de imóveis. Desde a escolha do bairro até o fechamento do contrato, estamos com você em cada passo dessa jornada.</p>
+                        <div class="destaque">
+                            <p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <strong>Atendimento Personalizado:</strong>
+                                "Cada cliente é único e merece uma solução sob medida."
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <strong>Aconselhamento Profissional:</strong>
+                                "Dicas e orientações para fazer a escolha certa."
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <strong>Suporte Completo: </strong>
+                                "Acompanhamento durante todo o processo, garantindo que tudo saia perfeito."
+                            </p>
+                        </div>
+                        <!-- <figure>
+                            <img src="" alt="">
+                        </figure> -->
+                        <div class="btn-container">
+                            <a href="https://api.whatsapp.com/send?phone=5521968045339&text=Obrigado%20por%20clicar%20no%20meu%20projeto" class="btn btn-orange">Fale conosco <i class="fa-solid fa-comments"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+                <div class="footer-brand">
+                    <a href="./index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <h2>Carioca Imóveis</h2>
+                        <p>Deixa com a gente!</p>
+                    </a>
+                    
+                    
+                </div>
+
+                <ul class="footer-navigation">
+                    <!-- li*5>a:blank.footer-nav-item -->
+                    <li><a href="index.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Inicio</a></li>
+                    <li><a href="sobre.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Sobre a Carioca</a></li>
+                    <li><a href="imoveis.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Imóveis</a></li>
+                    <li><a href="contato.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Contato</a></li>
+                    <li><a href="area-cliente.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right"></i>Area Cliente</a></li>  
+                </ul>
+
+                <div class="social-navigation">
+                    <a href="https://www.facebook.com/berg.sousa.391/?locale=pt_BR"><i class="fa-brands fa-facebook" title="icone de acesso ao facebook"></i></a>
+                    <a href="https://www.instagram.com/sousa.berg.80/"><i class="fa-brands fa-instagram" title="icone de acesso ao instagram"></i></a>
+                    <a href="https://github.com/wlidemberg"><i class="fa-brands fa-github" title="icone de acesso ao github"></i></a>
+                    <a href="https://www.linkedin.com/in/wlidemberg-sousa-465367101/"><i class="fa-brands fa-linkedin" title="icone de acesso ao linkedin"></i></a>
+                    <a href="https://www.behance.net/automatizei_berg"><i class="fa-brands fa-behance" title="icone de acesso ao behance"></i></a>
+                    <a href="mailto:automatizei@gmail.com"><i class="fa-solid fa-envelope" title="icone de envio de email"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
